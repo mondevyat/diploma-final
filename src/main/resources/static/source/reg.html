@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    <title>Регистрация</title>
+</head>
+<body>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/usefulMethods.js"></script>
+<div class="banner"></div>
+<div class="container__wrapper">
+    <div class="container">
+        <script src="../scripts/header.js"></script>
+        <div class="auth__form__wrapper">
+            <div class="auth__form">
+                <div class="auth">
+                    <div class="user__name__form">
+                        <p class="regTitle">Введите имя:</p>
+                        <input type="text" name="user__name" id="user__name" placeholder="">
+                    </div>
+                    <div class="user__surname__form">
+                        <p class="regTitle">Введите фамилию:</p>
+                        <input type="text" name="user__surname__form" id="user__surname__form" placeholder="">
+                    </div>
+                    <div class="email__form">
+                        <p class="regTitle">Введите e-mail:</p>
+                        <input type="text" name="email" id="email" placeholder="">
+                    </div>
+                    <div class="password__form">
+                        <p class="regTitle">Введите пароль:</p>
+                        <input type="password" name="password" id="password" placeholder="">
+                    </div>
+                    <div class="password__confirm__form">
+                        <p class="regTitle">Повторите пароль:</p>
+                        <input type="password" name="confirm__password" id="confirm__password" placeholder="">
+                    </div>
+                    <input type="submit" name="confirm" id="confirm" value="Регистрация">
+                    <a href="auth.html" class="auth__form__link">Уже есть аккаунт?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../scripts/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/add.css">
+    <title>Добавление товара</title>
+</head>
+<body>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/usefulMethods.js"></script>
+<div class="banner"></div>
+<div class="container__wrapper">
+    <div class="container">
+        <script src="../scripts/header.js"></script>
+        <div class="auth__form__wrapper">
+            <div class="auth__form">
+                <div class="auth">
+                    <div class="item__name">
+                        <p class="addTitle">Введите название товара:</p>
+                        <input type="text" name="name" id="item__name" placeholder="">
+                    </div>
+                    <div class="item__price__set">
+                        <p class="addTitle">Введите цену:</p>
+                        <input type="text" name="price" id="item__price" placeholder="">
+                    </div>
+                    <div class="item__category">
+                        <p class="addTitle">Выберите категорию:</p>
+                        <select id="catList">
+                            <option selected></option>
+                            <option>1. Электроника</option>
+                            <option>2. Мода</option>
+                            <option>3. Красота и здоровье</option>
+                            <option>4. Авто и мото</option>
+                            <option>5. Коллекционные товары</option>
+                            <option>6. Спортивные товары</option>
+                            <option>7. Дом и сад</option>
+                        </select>
+                    </div>
+                    <div class="item__subcategory">
+                        <p class="addTitle">Выберите подкатегорию:</p>
+                        <script src="../scripts/getSubList.js"></script>
+                    </div>
+                    <div class="item__description">
+                        <p class="addTitle">Добавьте описание:</p>
+                        <textarea name="description" id="item__description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="item__photos">
+                        <p class="addTitle">Загрузите фотографии:</p>
+                        <input type="file" name="photos" id="item__photos" placeholder="">
+                    </div>
+                    <input type="submit" name="confirm" id="item__confirm" value="Добавить">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../scripts/add.js"></script>
+</body>
+</html>

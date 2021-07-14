@@ -1,0 +1,151 @@
+body {
+    font-family: 'FFDIN' !important;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: var(--scheme-color-hover);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Подключение шрифта */
+
+@font-face {
+    font-family: 'FFDIN';
+    src: url(../fonts/FFDIN.ttf);
+}
+
+:root {
+    --scheme-color: #282828;
+    --scheme-color-hover: #545454;
+}
+
+.container {
+  height: 1071px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin__panel {
+  height: 8%;
+  display: flex;
+  background-color: var(--scheme-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotype {
+    width: 20%;
+    height: 70%;
+    background-color: var(--scheme-color);
+    /*background-image: url(../img/logotype.png);*/
+    /*background-size: cover;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    margin: 7px 7px 7px 14px;
+}
+
+.__nav {
+    height: 100%;
+    margin-right: 69px;
+}
+
+.main__nav {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main__nav li {
+    padding: 0 20px 0 0;
+}
+
+.main__nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+}
+
+.main__nav li a:hover {
+    color: #a5a5a5;
+    transition-duration: 0.25s;
+}
+
+.content__panel {
+  height: 92%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Левая панель */
+
+.left__sidebar {
+    background-color: var(--scheme-color-hover);
+    width: 12%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main__panel {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    background-color: #bfbfbf;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.links {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subcategories__title {
+    color: white;
+    font-size: 1.75rem;
+}
+
+.subcategories__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    border-bottom: 1px solid rgb(197, 204, 204);
+
+}
+
+.subcategories__link:hover {
+    background-color: rgba(255, 255, 255, 0.59);
+}
